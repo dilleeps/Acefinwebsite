@@ -3,9 +3,9 @@ import CtaBanner from '../components/CtaBanner';
 import { LIVE_DEMO_URL } from '../lib/site';
 
 export const metadata = {
-  title: 'Hospitality & ERP Software Solutions | ACE Financials Technology',
+  title: 'Hospitality ERP with Daily P&L Clarity | ACE Financials Technology',
   description:
-    'All-in-one web-based hotel ERP to manage finance, HR operations and improve profitability. Trusted by 40+ hotels to reduce manual work and gain real-time insights.',
+    'The web-based hotel ERP trusted by 40+ properties — daily P&L with drill-down, faster close, and ROI within a year across finance, procurement, payroll & HR, and fixed assets.',
 };
 
 const MODULES = [
@@ -77,12 +77,12 @@ export default function Home() {
           <div>
             <p className="eyebrow">Hospitality ERP · Cloud-native</p>
             <h1>
-              Run your entire hotel back office on <em>one platform</em>
+              Daily P&amp;L clarity across <em>every property</em>
             </h1>
             <p className="lede">
-              Finance, procurement, payroll &amp; HR, and fixed assets — unified in a single
-              web-based ERP built for hotels, restaurants, and growing enterprises. No servers to
-              maintain, nothing to install.
+              ACE Financials unifies finance, procurement, payroll &amp; HR, and fixed assets in
+              one web-based ERP — so department heads see their numbers every morning, finance
+              closes faster, and the platform pays for itself within a year.
             </p>
             <div className="hero-ctas">
               <Link className="btn btn-solid" href="/contact/">
