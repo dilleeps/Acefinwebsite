@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import CtaBanner from '../components/CtaBanner';
+import LogoStrip from '../components/LogoStrip';
 import { LIVE_DEMO_URL } from '../lib/site';
 
 export const metadata = {
@@ -169,22 +170,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="logos">
-        <div className="wrap">
-          <p>Trusted by leading hospitality brands</p>
-          <div className="logo-row">
-            <span className="brand b-serif b-westin">WESTIN</span>
-            <span className="brand b-serif b-hilton">Hilton</span>
-            <span className="brand b-serif b-meridien">LE MÉRIDIEN</span>
-            <span className="brand b-aloft">aloft</span>
-            <span className="brand b-serif b-sheraton">Sheraton</span>
-            <span className="brand b-serif b-kempinski">KEMPINSKI</span>
-            <span className="brand b-paul">
-              <i>P</i>THE PAUL
-            </span>
-          </div>
-        </div>
-      </div>
+      <LogoStrip />
 
       <section className="block">
         <div className="wrap">

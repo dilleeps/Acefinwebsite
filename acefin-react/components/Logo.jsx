@@ -1,25 +1,27 @@
 import Link from 'next/link';
 
+// Vector recreation of the ACE Financials Technology LLC logo:
+// a fan of gray arcs opening left, with an orange gradient sphere.
 export default function Logo({ id = 'lg' }) {
   return (
     <Link className="logo" href="/" aria-label="ACE Financials home">
-      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+      <svg width="42" height="36" viewBox="0 0 42 36" aria-hidden="true">
         <defs>
-          <linearGradient id={id} x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stopColor="#D97757" />
-            <stop offset="1" stopColor="#A84F30" />
-          </linearGradient>
+          <radialGradient id={`${id}-ball`} cx="35%" cy="30%" r="80%">
+            <stop offset="0" stopColor="#FFDCAB" />
+            <stop offset="0.55" stopColor="#F59A4B" />
+            <stop offset="1" stopColor="#DE7325" />
+          </radialGradient>
+          <clipPath id={`${id}-fan`}>
+            <rect x="0" y="0" width="29" height="36" />
+          </clipPath>
         </defs>
-        <rect width="34" height="34" rx="9" fill={`url(#${id})`} />
-        <path
-          d="M8.5 24.5 L17 8.5 L25.5 24.5"
-          fill="none"
-          stroke="#fff"
-          strokeWidth="3"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <line x1="12.8" y1="19" x2="21.2" y2="19" stroke="#fff" strokeWidth="3" strokeLinecap="round" />
+        <g clipPath={`url(#${id}-fan)`} fill="none" strokeLinecap="round">
+          <circle cx="29" cy="18" r="16.5" stroke="#C9C5BC" strokeWidth="2.4" opacity="0.45" />
+          <circle cx="29" cy="18" r="13" stroke="#B5B1A6" strokeWidth="2.4" opacity="0.6" />
+          <circle cx="29" cy="18" r="9.5" stroke="#A19C90" strokeWidth="2.4" opacity="0.8" />
+        </g>
+        <circle cx="29" cy="18" r="6.5" fill={`url(#${id}-ball)`} />
       </svg>
       <span className="logo-word">
         ACE Financials

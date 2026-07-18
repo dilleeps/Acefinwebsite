@@ -108,7 +108,7 @@ header.site {
 .nav { display: flex; align-items: center; gap: 30px; height: 68px; }
 .logo { display: flex; align-items: center; gap: 11px; text-decoration: none; }
 .logo svg { display: block; flex: none; }
-.logo-word { font-family: var(--display); font-weight: 780; font-size: 19px; letter-spacing: -0.02em; line-height: 1.05; }
+.logo-word { font-family: var(--body); font-weight: 800; font-size: 15.5px; letter-spacing: 0.04em; text-transform: uppercase; line-height: 1.05; }
 .logo-word small {
   display: block;
   font-family: var(--mono);
@@ -192,6 +192,7 @@ nav.links a:hover, nav.links a:focus-visible, nav.links a[aria-current="page"] {
 .logo-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 22px 52px; color: var(--ink-faint); }
 .logo-row .brand { opacity: 0.62; filter: grayscale(1); transition: opacity 0.2s ease, filter 0.2s ease; display: flex; align-items: baseline; line-height: 1; white-space: nowrap; }
 .logo-row .brand:hover { opacity: 1; filter: none; color: var(--ink); }
+.brand-img { height: 36px; width: auto; max-width: 150px; object-fit: contain; display: block; }
 .b-serif { font-family: Georgia, "Times New Roman", serif; }
 .b-westin { font-size: 19px; letter-spacing: 0.34em; font-weight: 400; }
 .b-hilton { font-size: 24px; font-weight: 600; letter-spacing: 0.01em; }
